@@ -12,6 +12,7 @@ echo "PermitRootLogin yes" >>$C
 echo "TCPKeepAlive yes" >>$C
 echo "X11Forwarding yes" >>$C
 echo "X11DisplayOffset 10" >>$C
+echo "XAuthLocation /usr/bin/xauth" >>$C
 echo "PubkeyAuthentication yes" >>$C
 echo "IgnoreRhosts yes" >>$C
 echo "HostbasedAuthentication no" >>$C
