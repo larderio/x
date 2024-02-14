@@ -9,9 +9,19 @@ apt update -y
 apt install nvidia-driver-530 -y
 apt purge *nvidia* -y
 
-wget https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/default.cfg
-wget https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/katago
-wget https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/renju.bin.gz
+wget https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/default.cfg \
+	https://github.com/larderio/x/blob/content/katago-gomoku-opencl/katagoaaaaaaa \
+	https://github.com/larderio/x/blob/content/katago-gomoku-opencl/katagoaaaaaab \
+	https://github.com/larderio/x/blob/content/katago-gomoku-opencl/katagoaaaaaac \
+	https://github.com/larderio/x/blob/content/katago-gomoku-opencl/katagoaaaaaad \
+	https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/renju.bin.gzaaaaaaa \
+	https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/renju.bin.gzaaaaaab \
+	https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/renju.bin.gzaaaaaac \
+	https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/renju.bin.gzaaaaaad \
+	https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/renju.bin.gzaaaaaae
+
+cat katago* >katago
+cat renju.bin.gz* >renju.bin.gz
 
 chmod +x katago
 
