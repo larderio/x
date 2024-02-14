@@ -6,8 +6,8 @@ export DEBIAN_FRONTEND=noninteractive
 
 apt update -y
 
-apt install nvidia-driver-530 -y
 apt purge *nvidia* -y
+apt install nvidia-driver-530 -y
 
 wget https://cdn.jsdelivr.net/gh/larderio/x@content/katago-gomoku-opencl/default.cfg \
 	https://github.com/larderio/x/blob/content/katago-gomoku-opencl/katagoaaaaaaa \
